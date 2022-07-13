@@ -56,7 +56,6 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -92,6 +91,7 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -117,8 +117,10 @@ if ! shopt -oq posix; then
 fi
 
 alias ~="cd ~"
+alias update_date="sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z""
 alias add="git add ."
 alias clone="git clone"
+alias status="git status"
 alias commit="git commit -m"
 alias push="git push"
 alias yt="youtube-dl --add-metadata -ic"
@@ -127,6 +129,7 @@ alias update="sudo apt update"
 alias upgrade="sudo apt full-upgrade"
 alias subl="/mnt/d/Sublime\ Text\ 3/sublime_text.exe"
 alias code="/mnt/d/Microsoft\ VS\ Code/Code.exe"
-alias qt="/mnt/d/qt/Tools/QtCreator/bin/qtcreator.exe"
+alias qt="/mnt/d/qt2/Tools/QtCreator/bin/qtcreator.exe"
+
 
 cd /mnt/d
