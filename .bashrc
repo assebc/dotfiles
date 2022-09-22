@@ -123,6 +123,7 @@ alias clone="git clone"
 alias status="git status"
 alias commit="git commit -m"
 alias push="git push"
+alias pull="git pull"
 alias yt="youtube-dl --add-metadata -ic"
 alias yta="youtube-dl --add-metada -xic"
 alias update="sudo apt update"
@@ -130,6 +131,10 @@ alias upgrade="sudo apt full-upgrade"
 alias subl="/mnt/d/Sublime\ Text\ 3/sublime_text.exe"
 alias code="/mnt/d/Microsoft\ VS\ Code/Code.exe"
 alias qt="/mnt/d/qt2/Tools/QtCreator/bin/qtcreator.exe"
-
+alias idea="/mnt/d/intelij/IntelliJ\ IDEA\ 2022.1.4/bin/idea64.exe"
 
 cd /mnt/d
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
