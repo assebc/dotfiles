@@ -117,6 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 alias ~="cd ~"
+alias ..="cd ../"
 alias update_date="sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z""
 alias add="git add ."
 alias clone="git clone"
@@ -132,6 +133,9 @@ alias subl="/mnt/d/Sublime\ Text\ 3/sublime_text.exe"
 alias code="/mnt/d/Microsoft\ VS\ Code/Code.exe"
 alias qt="/mnt/d/qt2/Tools/QtCreator/bin/qtcreator.exe"
 alias idea="/mnt/d/intelij/IntelliJ\ IDEA\ 2022.1.4/bin/idea64.exe"
+alias uminho="cd /mnt/d/github/uminho-lei"
+alias github="cd /mnt/d/github"
+
 
 cd /mnt/d
 
