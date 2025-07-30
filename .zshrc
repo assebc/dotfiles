@@ -17,15 +17,5 @@ fi
 # Custom Aliases
 alias github="cd ~/github"
 
-# Git Aliases
-alias add="git add ."
-alias clone="git clone"
-alias status="git status"
-alias commit="git commit -m"
-alias push="git push"
-alias pull="git pull"
-alias pr="git checkout -b"
-alias checkout="git checkout"
-alias branch="git branch"
-alias stash="git stash"
-alias pop="git stash pop"
+# Load Angular CLI autocompletion.
+source <(ng completion script)
