@@ -19,3 +19,6 @@ alias github="cd ~/github"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+
+alias teams="teams-for-linux"
+alias google="google-chrome-stable"
