@@ -22,3 +22,5 @@ source <(ng completion script)
 
 alias teams="teams-for-linux"
 alias google="google-chrome-stable"
+alias whatsapp="wasistlos"
+alias outlook="/opt/outlook-for-linux/outlook-for-linux"
